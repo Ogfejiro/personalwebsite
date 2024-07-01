@@ -3,11 +3,14 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 20px;
+  background-color: #000;
 }
 
 .container {
   max-width: 700px;
   margin: 0 auto;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 10px grey;
 }
 
 h1 {
@@ -60,6 +63,18 @@ h1 {
   background-color: #3e8e41;
 }
 
+/* Sub-section styles */
+.sub-section {
+  margin: 20px 0; /* Add some margin for better spacing */
+  text-align: center; /* Center text within sub-section */
+}
+
+.sub-section ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0; /* Reset default margins */
+}
+
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .profile {
@@ -70,5 +85,9 @@ h1 {
   }
   .btn {
     /* Adjust button styles for smaller screens if needed */
+  }
+
+  .sub-section {
+    /* Adjust styles for smaller screens if needed */
   }
 }
