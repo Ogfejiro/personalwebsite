@@ -1,0 +1,74 @@
+/* Base styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Wrap links on smaller screens */
+  margin-bottom: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Button styles */
+.btn {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column; /* Stack elements on smaller screens */
+  }
+  .profile img {
+    margin: 0 auto 10px;
+  }
+  .btn {
+    /* Adjust button styles for smaller screens if needed */
+  }
+}
