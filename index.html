@@ -2,54 +2,209 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>My Tech Goals</title>
-      <style>
-        /* Add your styles here for visual appeal and responsiveness */
-      </style>
-    </head>
-    <body>
-      <div class="container">
-        <h1>My Tech Goals</h1>
-        <section class="profile">
-          <img src="https://ca.slack-edge.com/T07466B189M-U079T85CT5L-d8121d589425-48" alt="Slack Profile Picture" data-testid="slackProfilePicture">
-          <p> <span data-testid="slackDisplayName">preshcode</span></p>
-          <p><span data-testid="slackEmail">ogwaraprecious8@gmail.com</span></p>
-          <p>Today: <span data-testid="currentDay"></span>, <span data-testid="currentTimeUTC"></span> UTC</p>
-
-        </section>
-        
-       <div class="sub-section">
-        <p>**My Tech Goals for the next two years:</p>
-        <ul>
-          <li>Master Javascript</li>
-          <li>Become good in react</li>
-          <li>Land an amazing tech job</li>
-          <li>Build alot of projects</li>
-        </ul>
-       </div>
-        <section class="links">
-          <button class="btn"><a href="https://hng.tech/learn" target="_blank" data-testid="hngLink">hng.tech/learn</a></button>
-         <button class="btn"> <a href="https://www.keyword.dog/" target="_blank" data-testid="keywordLink">keyword.dog</a></button>
-         <button class="btn"> <a href="https://scrapeanyweb.site/" target="_blank" data-testid="scrapeanywebLink">scrapeanyweb.site</a></button>
-        </section>
+    <nav id="desktop-nav" >
+      <div class="logo" data-aos="fade-in">My Tech Goals For The Next Two Years</div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo" data-aos="fade-in">My Tech Goals For The Next Two Years</div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container" data-aos="fade-left">
+        <img
+          src="https://ca.slack-edge.com/T07466B189M-U079T85CT5L-d8121d589425-74"
+          alt="Slack Profile Picture"
+          data-testid="slackProfilePicture"
+        />
       </div>
-      <script src="script.js">
-        // Add your Javascript code here to fetch and display current date/time
-      </script>
-    </body>
-    </html>
+      <div class="section__text" data-aos="fade-right">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ogwara Precious</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <p>
+          Have you ever envisioned a website so captivating it pulls you right
+          in? I do that. I'm Ogwara Precious, a front-end developer with a
+          passion for transforming bland designs into stunning, responsive
+          websites that keep users clicking for more.
+        </p>
+
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/ogwara-precious-617aa8251?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWe7ZlxtvRdasJ0rGfyqDkg%3D%3D'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Ogfejiro'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" data-aos="fade-up">
+      <h1 class="title">My Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div data-aos="fade-left">
+                  <h3>HTML</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div data-aos="fade-right">
+                  <h3>CSS</h3>
+                  
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div data-aos="fade-left">
+                  <h3>JavaScript</h3>
+                
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div data-aos="fade-right">
+                  <h3>TypeScript</h3>
+                
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div data-aos="fade-left">
+                  <h3>Git</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div data-aos="fade-right">
+                  <h3>Next JS</h3>
+                 
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div data-aos="fade-left">
+                  <h3>React</h3>
+                 
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <h1 class="title">My Goals</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title"> First Year</h2>
+            <ul>
+              <li>Mastering JavaScript</li>
+              <li>Mastering TailwindCss</li>
+              <li>Understanding the Concept of React</li>
+              <li>Building projects using React and TailwindCss</li>
+            </ul>
+          </div>
+
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Second Year</h2>
+            <ul>
+              <li>Understanding the Concept of Next.js</li>
+              <li>Contiribute to Open-Source</li>
+              <li>Build more Projects using Next.js</li>
+              <li>Update my Portfolio and apply for a tech job</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1"></p>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <div><p>Slackname: <span data-testid="slackDisplayName">preshcode</span></p></div>
+          
+          <div><p> Slack Email: <span data-testid="slackEmail">ogwaraprecious8@gmail.com</span></p></div>
+          <p>CurrentDay: <span data-testid="currentDay"></span>, </p>
+          <p>CurrentTimeUTC: <span data-testid="currentTimeUTC"></span> UTC</p>
+
+          <section class="links">
+
+            <button class="btn"><a href="https://hng.tech/learn" target="_blank" data-testid="hngLink">hng.tech/learn</a></button>
+           <button class="btn"> <a href="https://www.keyword.dog/" target="_blank" data-testid="keywordLink">keyword.dog</a></button>
+           <button class="btn"> <a href="https://scrapeanyweb.site/" target="_blank" data-testid="scrapeanywebLink">scrapeany</a></button>
+          </section>
+
+    </section>
     
-      </ul>
-    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+      });
+    </script>
   </body>
 </html>
